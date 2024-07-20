@@ -1,0 +1,224 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+body{
+  background-color: #0D0D0D;
+  scroll-behavior: smooth;
+}
+.loading{
+  background-color: black;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 3px solid #FFF;
+  border-right: 3px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+/* Nav bar */
+.side-bar {
+  top: 0;
+  left: -262.562px;
+  height: 100vh;
+}
+.right {
+  width: 70px;
+}
+
+.left {
+  background-color: black;
+  color: white;
+  padding-right: 30px;
+  height: 100vh;
+}
+.bar-btn {
+  cursor: pointer;
+}
+.links{
+  padding-top: 200px;
+  opacity: 0;
+  transition: 2s;
+}
+.links a{
+  color: white;
+  transition: 2s;
+}
+.logos{
+  cursor: pointer;
+}
+.red{
+  color: rgb(176, 42, 55);
+}
+/* Search */
+
+#search::placeholder{
+  color: #6C757D;
+}
+
+/* home */
+#home{
+  color: white;
+}
+.rating{
+  border: green 3px solid;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 20px;
+}
+.movie-layer{
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: all 1s;
+}
+.slide-down{
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 1s;
+}
+.slide-up{
+  transform: translateY(50%);
+  opacity: 0;
+  transition: all 1s;
+}
+/* .rotate{
+  animation-name: flipInX;
+  animation-duration: 1.5s;
+} */
+.movie{
+  overflow: hidden;
+}
+
+.img img{
+  transition: all 1s ;
+}
+.movie:hover .img img{
+  filter: blur(2px);
+  cursor: pointer;
+  transform: scale(1.2) rotateZ(5deg);
+}
+.movie:hover .movie-layer{
+  opacity: 1;
+}
+.movie:hover .slide-down{
+  transform: translateY(0);
+  opacity: 1;
+}
+.movie:hover .slide-up{
+  transform: translateY(0);
+  opacity: 1;
+}
+.movie:hover .rotate{
+  animation-name: flipInX;
+  animation-duration: 1s;
+}
+
+
+@keyframes flipInX {
+  0% {
+      transform: perspective(400px) rotateX(90deg);
+      animation-timing-function: ease-in;
+      opacity: 0
+  }
+
+  40% {
+      transform: perspective(400px) rotateX(-20deg);
+      animation-timing-function: ease-in
+  }
+
+  60% {
+      transform: perspective(400px) rotateX(10deg);
+      opacity: 1
+  }
+
+  80% {
+      transform: perspective(400px) rotateX(-5deg)
+  }
+
+  to {
+      transform: perspective(400px)
+  }
+}
+
+
+
+
+/* Contact */
+.contact{
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+  border-bottom: solid 2px white;
+  border-radius: 0;
+  color: white;
+}
+.contact:focus{
+  box-shadow: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: solid 2px white;
+  color: white;
+}
+.contact::placeholder{
+  text-align: center;
+  color: #5A7379;
+  font-size: 16px;
+}
+.btn{
+  color: white;
+  background-color: black;
+  transition: 0.5s;
+}
+.btn:hover{
+  color: black;
+  background-color: white;
+}
+@keyframes shake {
+  0% {margin-left: 0;}
+  15% {margin-left: 20px;}
+  30% {margin-left: 0px;}
+  45% {margin-left: 20px;}
+  60% {margin-left: 0px;}
+  75% {margin-left: 20px;}
+  90% {margin-left: 0px;}
+}
+
+.shake-x{
+  animation-name: shake;
+  animation-duration: 1s;
+  background-color: #DC3545;
+}
+.enter{
+  margin-left: 300px;
+}
+.leave{
+  margin-left: 0;
+}

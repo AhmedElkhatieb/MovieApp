@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="m-5 overflow-hidden" id="body">
+    <section id="loading" class="d-block">
+        <div class="loading d-flex justify-content-center align-items-center vh-100 z-3 position-absolute">
+            <span class="loader"></span>
+        </div>
+    </section>
+
+    <nav>
+        <div class="side-bar position-fixed z-1 d-flex  justify-content-between">
+            <div class="left ps-4 pt-5 d-flex flex-column justify-content-between">
+                <ul class="list-unstyled links">
+                    <li class="link"><a href="#">Now Playing</a></li>
+                    <li class="link mt-3"><a href="#">Popular</a></li>
+                    <li class="link mt-3"><a href="#">Top Rated</a></li>
+                    <li class="link mt-3"><a href="#">Trending</a></li>
+                    <li class="link mt-3"><a href="#">Upcoming</a></li>
+                    <li class="link mt-3"><a href="#contact">Contat Us</a></li>
+                </ul>
+                <div class="footer">
+                    <ul class="list-unstyled d-flex">
+                        <li><i class="me-2 fa fa-brands fa-facebook"></i></li>
+                        <li><i class="me-2 fa fa-brands fa-twitter"></i></li>
+                        <li><i class="fa fa-solid fa-globe"></i></li>
+                    </ul>
+                    <p>Copyright © 2022 All Rights <br>
+                        Reserved.</p>
+                    <p>Created by <span class="red">Housam Ramadan</span></p>
+                </div>
+            </div>
+            <div class="right bg-white d-flex flex-column vh-100 justify-content-between align-items-center">
+                <img src="./img/logo.png" alt="logo" class="w-50 mt-3">
+                <span class="bar-btn"><i class="open-close fa-solid open-close-icon fa-2x fa-align-justify"></i></span>
+                <ul class="logos list-unstyled">
+                    <li><i class="fa-solid fa-globe"></i></li>
+                    <li><i class="fa-solid fa-share-nodes"></i></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="search-bar" class="text-center">
+        <input type="text" id="search" placeholder="Search"
+            class="form-control rounded-pill w-50 mx-auto mb-5 bg-transparent text-white shadow-none border-white px-3">
+    </section>
+
+    <section id="home">
+        <div class="container">
+            <div class="row g-5" id="rowBody">
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="mt-5">
+        <div class="container">
+            <h2 class="text-white">Contact Us</h2>
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <input type="text" placeholder="Enter Your Name" class="form-control contact" id="uName">
+                    <div class="d-none text-danger uName">
+                        <p>Invalid Name, only characters allowed</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" placeholder="Enter Your Email" class="form-control contact" id="uEmail">
+                    <div class="d-none text-danger uEmail">
+                        <p>Invalid Emial, try example@domain.com</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input type="number" placeholder="Enter Your Phone" class="form-control contact" id="uPhone">
+                    <div class="d-none text-danger uPhone">
+                        <p>Invalid Phone Number</p>
+                    </div>
+                </div>
+                <div class="col-md-6"> 
+                    <input type="number" placeholder="Enter Your Age" class="form-control contact" id="uAge">
+                    <div class="d-none text-danger uAge">
+                        <p>Your age must be over 16+</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input type="password" placeholder="Enter Your Password" class="form-control contact" id="uPassword">
+                    <div class="d-none text-danger uPassword">
+                        <p>Password must contain numbers & letters at least 8 characters</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input type="password" placeholder="Reenter Password" class="form-control contact" id="uPassword2">
+                    <div class="d-none text-danger uPassword2">
+                        <p>Passwords didnt match</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn mt-3">Submit</button>
+        </div>
+    </section>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
